@@ -8,7 +8,7 @@ Ce projet illustre le processus d'importation d'un fichier contenant des coordon
 ### 1. Lecture du fichier SSV dans FME
 - Fichier source : [Lien vers le fichier CSV](https://donnees.montreal.ca/dataset/c1d65779-d3cb-44e8-af0a-b9f2c5f7766d/resource/28a4957d-732e-48f9-8adb-0624867d9bb0/download/businesses.csv)
 - Capture d’écran :
-  ![Lecture du fichier dans FME 1](geo7630h25\captures_etapes\Conf_reader.png)
+  ![Lecture du fichier dans FME 1](captures_etapes/Conf_reader.png)
   ![Lecture du fichier dans FME 2](geo7630h25\captures_etapes\Conf_reader2.png)
 
 
