@@ -1,11 +1,40 @@
-# geo7630
-# Projet : Importation et Visualisation de Données Géospatiales
+# 🗺️ geo7630
+
+## 📚 Projet : Importation et Visualisation de Données Géospatiales
 
 Ce projet illustre le processus d'importation d'un fichier contenant des coordonnées géographiques (X, Y) dans une base de données PostgreSQL/PostGIS, et la visualisation des données dans QGIS.
 
-## Étapes du projet
+---
 
-### 1. Lecture du fichier SSV dans FME
+## 🎯 Objectifs
+- Importer des données géospatiales depuis un fichier CSV dans une base PostgreSQL/PostGIS.
+- Visualiser ces données dans QGIS.
+- Apprendre à utiliser FME pour le traitement des données.
+
+---
+
+## ✏️ Tâches
+1. Lire un fichier CSV dans FME.
+2. Convertir les coordonnées en géométrie avec **VertexCreator**.
+3. Enregistrer les données dans PostgreSQL.
+4. Visualiser les données dans QGIS.
+
+---
+
+## 🛠️ Outils utilisés
+- ![Logo FME](captures_etapes/FME.png) **FME Workbench**
+- ![Logo PostgreSQL](captures_etapes/pg_admin.png) **PostgreSQL/PostGIS**
+- ![Logo QGIS](captures_etapes/QGIS.png) **QGIS**
+
+---
+
+
+
+
+
+## 📂 Étapes du projet
+
+### 1. Lecture du fichier CSV dans FME
 - Fichier source : [Lien vers le fichier CSV](https://donnees.montreal.ca/dataset/c1d65779-d3cb-44e8-af0a-b9f2c5f7766d/resource/28a4957d-732e-48f9-8adb-0624867d9bb0/download/businesses.csv)
 - Capture d’écran 1 :
   ![Lecture du fichier dans FME 1](captures_etapes/Conf_reader.png)
@@ -56,5 +85,5 @@ Ce projet illustre le processus d'importation d'un fichier contenant des coordon
 
 
 
-## Résultat final
+## ✅ Résultat final
 Les données géospatiales de Montréal sont maintenant importées dans PostgreSQL et visualisées avec succès dans QGIS.
