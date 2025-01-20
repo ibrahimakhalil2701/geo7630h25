@@ -27,7 +27,7 @@ Ce projet illustre le processus d'importation d'un fichier contenant des coordon
   ![Configuration du Writer PostgreSQL 2](geo7630h25\captures_etapes\7.png)
   ![Configuration du Writer PostgreSQL 3](geo7630h25\captures_etapes\8.png)
   ![Configuration du Writer PostgreSQL 4](geo7630h25\captures_etapes\9.png)
-  ![Configuration du Writer PostgreSQL 5](geo7630h25\captures_etapes\10.png)
+  ![Configuration du Writer PostgreSQL 5](captures_etapes/10.png)
   ![Configuration du Writer PostgreSQL 6](geo7630h25\captures_etapes\11.png)
   ![Configuration du Writer PostgreSQL 7](geo7630h25\captures_etapes\12.png)
   ![Configuration du Writer PostgreSQL 7](geo7630h25\captures_etapes\13.png)
