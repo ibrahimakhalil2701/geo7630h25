@@ -1,6 +1,8 @@
 # 🗺️ geo7630
 
-## 📚 Projet : Importation et Visualisation de Données Géospatiales
+
+
+# 📌 Projet :  Laboratoire 2 : Importation et Visualisation de Données Géospatiales
 
 Ce projet illustre le processus d'importation d'un fichier contenant des coordonnées géographiques (X, Y) dans une base de données PostgreSQL/PostGIS, et la visualisation des données dans QGIS.
 
