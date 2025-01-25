@@ -12,14 +12,14 @@ Ce projet illustre l'utilisation de FME, PostgreSQL/PostGIS et QGIS pour importe
 
 ## 🎯 Objectifs
 
-- 🚀 manipuler des données géospatiales plus complexes en combinant des données vectorielles et matricielles
-- 🌐 réaliser une jointure spatiale pour répondre à une problématique simple
+- 🚀 Manipuler des données géospatiales plus complexes en combinant des données vectorielles et matricielles
+- 🌐 Réaliser une jointure spatiale pour répondre à une problématique simple
 - 🌐 Effectuer des analyses géospatiales statistiques avec FME.
 - 🗺️ Visualiser les résultats dans QGIS avec une symbologie claire.
 
-## DOnnées 
+## Données 
 - [Limites administratives de la ville de Montréal](limites-administratives-agglomeration-nad83.geojson)
-[Répartition des arbres dans la ville de Montréal](arbres-publics.csv)
+- [Répartition des arbres dans la ville de Montréal](arbres-publics.csv)
 
 Problématique : Identifier la répartition des arbres par quartier dans la ville de Montréal.
 
