@@ -1,4 +1,4 @@
-# 📚 Geoportail Mali - Visualisation et Analyse Géospatiale
+# 📚 TP 1 Projet de Geoportail Mali - Développement d’un plateforme Interactive pour la Visualisation et l'Analyse des Données Géospatiales et Démographiques du Mali
 
 ## 📝 Description du Projet
 Le **Geoportail Mali** est une plateforme interactive dédiée à la visualisation, l'analyse, et le partage des données géospatiales et démographiques du Mali. Cette application vise à répondre à des problématiques essentielles liées à la planification territoriale, à la gestion des ressources, et à la prise de décision éclairée.
@@ -112,4 +112,4 @@ Le tableau de bord proposé centralise des données fiables pour permettre une m
 ---
 
 ## 🌟 Exemple de Réalisation
-Mon exemple de desing est disponible ici : [GeoImpact Sénégal](https://geoimpact.ai/outil/visualisation/ctry=SEN&lvl=4&inds=+&base=SatLayer&proj=/). Ce portail met en évidence des fonctionnalités similaires en matière de visualisation géospatiale et statistique.
+Mon exemple de desing est disponible ici : [GeoImpact ](https://geoimpact.ai/outil/visualisation/ctry=SEN&lvl=4&inds=+&base=SatLayer&proj=/). Ce portail met en évidence des fonctionnalités similaires en matière de visualisation géospatiale et statistique.
