@@ -36,7 +36,7 @@ Cette documentation détaille un processus avancé d'intégration et de traiteme
    MNS - Ville Marie - 1m res
 
 
-🖼️ *Capture d’écran : (photo/1.png)
+🖼️ *Capture d’écran : ![Capture d’écran](photo/1.png)
 🖼️ *Capture d’écran : (photo/2.png)
 🖼️ *Capture d’écran : (photo/3.png)
 
