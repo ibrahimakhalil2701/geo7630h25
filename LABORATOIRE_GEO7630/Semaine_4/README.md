@@ -37,16 +37,16 @@ Cette documentation détaille un processus avancé d'intégration et de traiteme
 
 
 🖼️ *Capture d’écran : ![Capture d’écran](photo/1.png)
-🖼️ *Capture d’écran : (photo/2.png)
-🖼️ *Capture d’écran : (photo/3.png)
+🖼️ *Capture d’écran : 📸 ![Capture d’écran](photo/2.png))
+🖼️ *Capture d’écran : 📸 ![Capture d’écran](photo/3.png)
 
 ### 🔹 Reprojection pour l'image de ville Marie
 1. **Reprojection des données** dans le système EPSG:32188 (MTM8), optimisé pour l’analyse spatiale au Québec.
 
 📌 Assurer que la projection est homogène pour toutes les données afin d’éviter toute distorsion dans les étapes suivantes.
 
-🖼️ *Capture d’écran : projections dans FME.(photo/5png)
-🖼️ *Capture d’écran : projections dans FME. (photo/6png)
+🖼️ *Capture d’écran : projections dans FME.📸 ![Capture d’écran](photo/5.png)
+🖼️ *Capture d’écran : projections dans FME. 📸 ![Capture d’écran](photo/6.png)
 
 
 
@@ -61,8 +61,8 @@ Cette documentation détaille un processus avancé d'intégration et de traiteme
 📌 Utilité : Ces informations sont cruciales pour assurer une transformation adaptée du raster et éviter des erreurs de projection ou d’interprétation des valeurs.
 
 
-🖼️ *Capture d’écran : Transformer RasterPropertyExtractor dans FME.(photo/4png)
-🖼️ *Capture d’écran : Transformer RasterPropertyExtractor dans FME. (photo/7png)
+🖼️ *Capture d’écran : Transformer RasterPropertyExtractor dans FME.📸 ![Capture d’écran](photo/4.png)
+🖼️ *Capture d’écran : Transformer RasterPropertyExtractor dans FME. 📸 ![Capture d’écran](photo/7.png)
 
 
 
@@ -87,10 +87,10 @@ Mode "Rows and Columns" choisi pour contrôler précisément la taille.
 Interpolation : Nearest Neighbor, rapide et adaptée aux données catégoriques.
 5️⃣ Résultat : Raster allégé, optimisé pour le stockage et l’analyse spatiale. 🚀
 
-🖼️ *Capture d’écran : Transformer RasterResampler dans FME.(photo/8png)
-🖼️ *Capture d’écran : Transformer RasterResampler dans FME. (photo/9png)
-🖼️ *Capture d’écran : Transformer RasterResampler dans FME. (photo/10png)
-🖼️ *Capture d’écran : Transformer RasterResampler dans FME. (photo/11png)
+🖼️ *Capture d’écran : Transformer RasterResampler dans FME.📸 ![Capture d’écran](photo/8.png)
+🖼️ *Capture d’écran : Transformer RasterResampler dans FME. 📸 ![Capture d’écran](photo/9.png)
+🖼️ *Capture d’écran : Transformer RasterResampler dans FME. 📸 ![Capture d’écran](photo/10.png)
+🖼️ *Capture d’écran : Transformer RasterResampler dans FME. 📸 ![Capture d’écran](photo/11.png)
 
 
 
@@ -101,9 +101,9 @@ Interpolation : Nearest Neighbor, rapide et adaptée aux données catégoriques.
   Stockage des pyramides pour une utilisation optimisée dans un SIG.
 
 
-🖼️ *Capture d’écran : Transformer RasterPyramdie dans FME.(photo/12png)
-🖼️ *Capture d’écran : Transformer RasterPyramdie dans FME. (photo/13png)
-🖼️ *Capture d’écran : Transformer RasterPyramdie dans FME. (photo/14png)
+🖼️ *Capture d’écran : Transformer RasterPyramdie dans FME.📸 ![Capture d’écran](photo/12.png)
+🖼️ *Capture d’écran : Transformer RasterPyramdie dans FME. 📸 ![Capture d’écran](photo/13.png)
+🖼️ *Capture d’écran : Transformer RasterPyramdie dans FME. 📸 ![Capture d’écran](photo/14.png)
 
 
 
@@ -116,7 +116,7 @@ Ajout du transformateur FeatureWriter
      Nom de la table : hm-2002-can-4000-0257 (où les données raster seront stockées).
      ✅ Objectif final : Stocker les rasters traités dans PostGIS, permettant une gestion avancée et une exploitation via SIG.
 
-🖼️ *Capture d’écran : Ajout du FeatureWriter dans FME.(photo/15png)
+🖼️ *Capture d’écran : Ajout du FeatureWriter dans FME.📸 ![Capture d’écran](photo/15.png)
 
 
 
@@ -129,8 +129,8 @@ Il est utilisé pour exécuter des requêtes SQL directement sur la base de donn
    - **Database Connection** :  à la base de données PostGIS.  
    - **SQL Query** : CREATE TABLE VOTRECODEMS.mns_pyramid_lvl_2 AS SELECT * FROM "hm-2002-can-4000-0257_pyramide" WHERE "_pyramid_level" = 2
 
-🖼️ *Capture d’écran : SQLExecuter dans FME.(photo/16png)
-🖼️ *Capture d’écran : SQLExecuter dans FME.(photo/17png)
+🖼️ *Capture d’écran : SQLExecuter dans FME.📸 ![Capture d’écran](photo/16.png)
+🖼️ *Capture d’écran : SQLExecuter dans FME.📸 ![Capture d’écran](photo/17.png)
 
 
 
@@ -148,8 +148,8 @@ Procédure :
 
 📌 Vérifier que la reprojection est réussie en inspectant les métadonnées du raster.
 
-🖼️ *Capture d’écran :  dans FME.(photo/18png)
-🖼️ *Capture d’écran :  dans FME.(photo/19png)
+🖼️ *Capture d’écran :  dans FME.📸 ![Capture d’écran](photo/18.png)
+🖼️ *Capture d’écran :  dans FME.📸 ![Capture d’écran](photo/19.png)
 
 ### 🔹 Conversion du Raster en Polygones
 1. **Utilisation de `RasterToPolygonCoercer`** pour transformer les cellules raster en entités vectorielles exploitables.
@@ -161,9 +161,9 @@ Procédure :
 Le `RasterToPolygonCoercer` est un transformateur essentiel pour convertir des images raster en objets vectoriels. Ce processus permet d'exploiter les données raster sous forme de polygones, facilitant leur manipulation et leur analyse dans les systèmes d’information géographique (SIG).
 
 
-🖼️ *Capture d’écran :  dans FME.(photo/20png)
-🖼️ *Capture d’écran :  dans FME.(photo/21png)
-🖼️ *Capture d’écran :  dans FME.(photo/22png)
+🖼️ *Capture d’écran :  dans FME.📸 ![Capture d’écran](photo/20.png)
+🖼️ *Capture d’écran :  dans FME.📸 ![Capture d’écran](photo/21.png)
+🖼️ *Capture d’écran :  dans FME.📸 ![Capture d’écran](photo/22.png)
 
 
 # 📝 Étape 2 : Stockage des Polygones des Îlots de Chaleur dans PostGIS et Visualisation QGIS
@@ -201,10 +201,10 @@ Enregistrer les polygones issus du `RasterToPolygonCoercer` dans la base de donn
 - Charger la table dans **QGIS** pour confirmer l’affichage des polygones.
 
 
-🖼️ *Capture d’écran :  dans FME.(photo/23png)
-🖼️ *Capture d’écran :  dans FME.(photo/24png)
-🖼️ *Capture d’écran :  dans FME.(photo/25png)
-🖼️ *Capture d’écran :  dans FME.(photo/26png)
+🖼️ *Capture d’écran :  dans FME.📸 ![Capture d’écran](photo/23.png)
+🖼️ *Capture d’écran :  dans FME.📸 ![Capture d’écran](photo/24.png)
+🖼️ *Capture d’écran :  dans FME.📸 ![Capture d’écran](photo/25.png)
+🖼️ *Capture d’écran :  dans FME.📸 ![Capture d’écran](photo/26.png)
 
 
 
@@ -217,8 +217,8 @@ Améliorer la netteté du raster en accentuant les bords et les détails.
 🔹 Le Connecter au raster reprojeté.   
 🔹 Exécuter et vérifier le rendu.  
  
-🖼️ *Capture d’écran :  dans FME.(photo/27png)
-🖼️ *Capture d’écran :  dans FME.(photo/28png)
+🖼️ *Capture d’écran :  dans FME.📸 ![Capture d’écran](photo/27.png)
+🖼️ *Capture d’écran :  dans FME.📸 ![Capture d’écran](photo/28.png)
 
 
 
@@ -229,7 +229,7 @@ Améliorer la netteté du raster en accentuant les bords et les détails.
 🔹 Définir **Decimal places = 1**.  
 🔹 Exécuter et vérifier les valeurs.  
 
-🖼️ *Capture d’écran :  dans FME.(photo/29png)
+🖼️ *Capture d’écran :  dans FME.📸 ![Capture d’écran](photo/29.png)
 
 
 ## 📝 Étape 5 : Conversion en polygones  
@@ -238,7 +238,7 @@ Améliorer la netteté du raster en accentuant les bords et les détails.
 🔹 Attribuer `_label = classification`.  
 🔹 Vérifier la génération des polygones.  
 
-🖼️ *Capture d’écran :  dans FME.(photo/30png)
+🖼️ *Capture d’écran :  dans FME.📸 ![Capture d’écran](photo/30.png)
 
 
 
@@ -250,8 +250,8 @@ Améliorer la netteté du raster en accentuant les bords et les détails.
 🔹 🗺️ Charger et vérifier dans **QGIS**.  
 
 
-🖼️ *Capture d’écran :  dans FME.(photo/31png)
-🖼️ *Capture d’écran :  dans FME.(photo/36png)
+🖼️ *Capture d’écran :  dans FME.📸 ![Capture d’écran](photo/31.png)
+🖼️ *Capture d’écran :  dans FME.📸 ![Capture d’écran](photo/36.png)
 
 
 
@@ -260,7 +260,7 @@ Améliorer la netteté du raster en accentuant les bords et les détails.
 🔹 Le Connecter à la couche raster re-projetée.  
 🔹 Exécuter et vérifier les résultats.  
 
-🖼️ *Capture d’écran :  dans FME.(photo/33png)
+🖼️ *Capture d’écran :  dans FME.📸 ![Capture d’écran](photo/33.png)
 
 
 
@@ -270,11 +270,11 @@ Améliorer la netteté du raster en accentuant les bords et les détails.
 🔹 **Nom de la table** : `ilots_chaleur_points`.  
 🔹 Charger et vérifier dans **QGIS** (pour extraire la valeur Z dans les props : $z )
 
-🖼️ *Capture d’écran :  dans FME.(photo/33png)
-🖼️ *Capture d’écran :  dans FME.(photo/34png)
-🖼️ *Capture d’écran :  dans FME.(photo/35png)
-🖼️ *Capture d’écran :  dans FME.(photo/36png)
-🖼️ *Capture d’écran :  dans FME.(photo/37png)
+🖼️ *Capture d’écran :  dans FME.📸 ![Capture d’écran](photo/33.png)
+🖼️ *Capture d’écran :  dans FME.📸 ![Capture d’écran](photo/34.png)
+🖼️ *Capture d’écran :  dans FME.📸 ![Capture d’écran](photo/35.png)
+🖼️ *Capture d’écran :  dans FME.📸 ![Capture d’écran](photo/36.png)
+🖼️ *Capture d’écran :  dans FME.📸 ![Capture d’écran](photo/38.png)
 
 
 
@@ -291,8 +291,8 @@ Le **ContourGenerator** est utilisé pour convertir un **Modèle Numérique de S
 
 📌 **Remarque** : Plus l’intervalle est petit, plus le nombre de courbes générées est important, augmentant ainsi le temps de calcul et la complexité du rendu.  
 
-🖼️ *Capture d’écran :  dans FME.(photo/38png)
-🖼️ *Capture d’écran :  dans FME.(photo/39png)
+🖼️ *Capture d’écran :  dans FME.📸 ![Capture d’écran](photo/38.png)
+🖼️ *Capture d’écran :  dans FME.📸 ![Capture d’écran](photo/39.png)
 
 
 
@@ -308,9 +308,9 @@ Le **Generalizer** est utilisé pour **réduire la complexité** des courbes de 
 
 📌 **Remarque** : Ajuster le paramètre de **tolérance** pour équilibrer entre précision et simplification. Une tolérance trop élevée pourrait altérer la fidélité du contour.  
 
-🖼️ *Capture d’écran :  dans FME.(photo/40png)
-🖼️ *Capture d’écran :  dans FME.(photo/41png)
-🖼️ *Capture d’écran :  dans FME.(photo/42png)
+🖼️ *Capture d’écran :  dans FME.📸 ![Capture d’écran](photo/40.png)
+🖼️ *Capture d’écran :  dans FME.📸 ![Capture d’écran](photo/41.png)
+🖼️ *Capture d’écran :  dans FME.📸 ![Capture d’écran](photo/42.png)
 
 
 
@@ -322,8 +322,8 @@ Le **`AreaBuilder`** permet de **convertir les lignes de contour** générées e
 📌 **Remarque** : On le conserve **options par défaut** pour assurer une conversion optimale.  
 
 
-🖼️ *Capture d’écran :  dans FME.(photo/43png)
-🖼️ *Capture d’écran :  dans FME.(photo/44png)
+🖼️ *Capture d’écran :  dans FME.📸 ![Capture d’écran](photo/43.png)
+🖼️ *Capture d’écran :  dans FME.📸 ![Capture d’écran](photo/44.png)
 ---
 
 # 📝 Étape 4 : Écriture des Polygones dans PostGIS
@@ -337,7 +337,7 @@ Stocker les polygones générés dans une base **PostGIS** pour les manipuler da
 🔹 Définir **Nom de la table** : `mns_contour_polygones`.  
 🔹 Exécuter et vérifier dans **QGIS**. 
 
-🖼️ *Capture d’écran :  dans FME.(photo/45png)
+🖼️ *Capture d’écran :  dans FME.📸 ![Capture d’écran](photo/45.png)
 
 
 # 🖼️ Visualisation dans QGIS  
