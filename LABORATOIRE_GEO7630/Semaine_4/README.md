@@ -36,9 +36,9 @@ Cette documentation détaille un processus avancé d'intégration et de traiteme
    MNS - Ville Marie - 1m res
 
 
-🖼️ *Capture d’écran : (photo/1png)
-🖼️ *Capture d’écran : (photo/2png)
-🖼️ *Capture d’écran : (photo/3png)
+🖼️ *Capture d’écran : (photo/1.png)
+🖼️ *Capture d’écran : (photo/2.png)
+🖼️ *Capture d’écran : (photo/3.png)
 
 ### 🔹 Reprojection pour l'image de ville Marie
 1. **Reprojection des données** dans le système EPSG:32188 (MTM8), optimisé pour l’analyse spatiale au Québec.
