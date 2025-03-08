@@ -1,115 +1,115 @@
-# 📚 TP 1 Projet de Geoportail Mali - Développement d’un plateforme Interactive pour la Visualisation et l'Analyse des Données Géospatiales et Démographiques du Mali
+📚 TP1 — Projet de Géoportail Montréal
+Développement d’une plateforme interactive pour la visualisation et l’analyse des données géospatiales et démographiques de la région de Montréal.
 
-## 📝 Description du Projet
-Le **Geoportail Mali** est une plateforme interactive dédiée à la visualisation, l'analyse, et le partage des données géospatiales et démographiques du Mali. Cette application vise à répondre à des problématiques essentielles liées à la planification territoriale, à la gestion des ressources, et à la prise de décision éclairée.
+📝 Description du Projet
+Le Géoportail Montréal est une plateforme webmapping centrée sur la visualisation, l’analyse et le partage de données géospatiales et socio-démographiques portant sur l’agglomération montréalaise. Cette plateforme vise à faciliter la planification urbaine, la gestion des ressources et la prise de décision éclairée pour les acteurs locaux (administrations, citoyens, chercheurs, etc.).
 
----
+🌍 Problématique
+Montréal et ses arrondissements disposent de nombreuses données, mais celles-ci sont souvent dispersées sur différents portails et formats. Le manque de centralisation peut entraîner une fragmentation de l’information et des difficultés dans la coordination des actions de développement urbain (mobilité, infrastructures, environnement, etc.).
 
-## 🌍 Problématique
-Le Mali est confronté à des défis liés à l'absence d'une base centralisée pour les données géospatiales et démographiques. Les données disponibles sont souvent fragmentées et difficilement accessibles, ce qui freine la coordination des actions de développement durable et la planification stratégique.
+🎯 Objectif
+Concevoir une plateforme web interactive qui agrège et met en valeur des données multisectorielles (démographiques, géographiques, statistiques) pour soutenir la planification territoriale, la transparence et la collaboration entre les différents acteurs de la région de Montréal.
 
----
+Objectifs spécifiques
+Renforcer la Prise de Décision
 
-## 🎯 Objectif
-L’objectif principal de ce projet est de concevoir une plateforme webmapping interactive qui intègre, visualise, et analyse des données multisectorielles (démographiques, géographiques, statistiques) pour répondre aux besoins croissants en matière de planification, de transparence, et de prise de décision stratégique au Mali.
+Mettre en évidence les inégalités territoriales (accès aux services publics, transport, espaces verts).
+Planifier plus efficacement l’aménagement urbain (projets d’infrastructures, logements).
+Faciliter la Planification Urbaine
 
-### Objectifs spécifiques
-- **Renforcer la Prise de Décision**
-  - Identifier les disparités régionales en termes d’accès aux services publics (écoles, hôpitaux, infrastructures de transport).
-  - Optimiser la gestion des ressources naturelles en localisant les zones critiques.
-  - Planifier efficacement les projets d’aménagement territorial.
-  
-- **Faciliter la Planification Territoriale**
-  - Centraliser les informations sur les infrastructures (routes, bâtiments, services publics).
-  - Évaluer l’accessibilité et la connectivité des infrastructures publiques.
-  - Identifier les zones prioritaires pour le développement ou la rénovation d’infrastructures.
+Centraliser l’information sur les réseaux routiers, bâtiments, parcs, etc.
+Visualiser la connectivité entre quartiers et mesurer l’accessibilité des équipements (hôpitaux, écoles, bibliothèques).
+Encourager la Transparence et l’Engagement Citoyen
 
-- **Encourager la Transparence et l’Engagement Citoyen**
-  - Promouvoir la transparence des actions publiques.
-  - Stimuler l’engagement citoyen en offrant des outils pour comprendre les enjeux territoriaux.
-  - Faciliter la collaboration entre les parties prenantes.
+Rendre les données accessibles au grand public dans un format compréhensible.
+Permettre la participation citoyenne à travers la consultation des cartes et l’ajout de retours ou d’annotations.
 
----
+🌍 Tableau de Bord et Fonctionnalités
+1. Données Démographiques
+Analyses prévues :
 
-## 🌍 Tableau de Bord et Fonctionnalités
-### 1. **Données Démographiques**
-- **Analyses prévues** :
-  - Distribution géographique de la population (total, homme, femme).
-  - Croissance démographique entre 2009 et 2022.
-  - Analyse comparative des densités de population par région, département, et commune.
-- **Visualisation** :
-  - Graphiques interactifs des tendances démographiques.
-  - Cartes des densités et pyramides des âges.
+Répartition géographique de la population (densité, âge, revenu médian, etc.).
+Évolution démographique récente (par exemple, de 2011 à 2021).
+Comparaisons entre arrondissements (ou quartiers) en termes de croissance.
+Visualisation :
 
-### 2. **Données Géographiques**
-- **Analyses prévues** :
-  - Localisation des points d’intérêt (écoles, hôpitaux, finances, place publiques, santé) via clustering.
-  - Localisation des infrastructures publiques (routes, chemins de fer, bâtiments).
-  - Analyse spatiale des infrastructures critiques (zones tampons, distances d'accès).
-- **Visualisation** :
-  - Cartes interactives des limites administratives (pays, région, département, commune).
-  - Répartition géographique des infrastructures.
+Graphiques interactifs sur les tendances démographiques (barres, lignes).
+Cartes thématiques montrant la densité, la répartition par tranches d’âge.
 
-### 3. **Statistiques Interactives**
-- **Analyses prévues** :
-  - Comparaison des indicateurs socio-économiques entre région, département, et commune.
-  - Intégration des API statistiques pour des données dynamiques.
-- **Visualisation** :
-  - Tableaux de bord interactifs intégrant des graphiques dynamiques et temporels.
+2. Données Géographiques
+Analyses prévues :
 
-### 4. **Fonctionnalités Avancées**
-- **Outils d’Édition et de Dessin** :
-  - Ajouter des polygones, lignes, et points directement sur la carte.
-  - Enregistrer les modifications dans une base de données PostgreSQL pour enrichir le webmapping.
-- **Navigation Interactive** :
-  - Outils de zoom et changement de basemaps.
-  - Interface conviviale pour les utilisateurs, accessible sur tous les appareils.
+Localisation des points d’intérêt (écoles, hôpitaux, bibliothèques) et analyse de leur couverture.
+Infrastructures urbaines : réseau routier, pistes cyclables, bâtiments.
+Distances d’accès et zones tampons autour d’équipements critiques (ex. hôpitaux, casernes de pompiers).
+Visualisation :
 
----
+Cartes interactives affichant les limites des arrondissements, les quartiers, etc.
+Mise en évidence des infrastructures publiques pour une lecture rapide de la couverture spatiale.
 
-## 🔍 Sources des Données
-Les données utilisées dans ce projet proviennent des sources suivantes :
-- [Données Ouvertes Maliennes](https://donnees.mali.opendata)
-- [OpenStreetMap](https://www.openstreetmap.org/) et Humanitarian Data Exchange (HDX).
+3. Statistiques Interactives
+Analyses prévues :
 
----
+Comparaison d’indicateurs socio-économiques (revenu moyen, taux de chômage, etc.).
+Possibilité d’intégrer des données dynamiques via API (par exemple, statistiques immobilières ou indicateurs de mobilité).
+Visualisation :
 
-## 🚀 Méthodologie et Analyses
-1. **Collecte des Données** : Identification et acquisition des jeux de données nécessaires (limites administratives, infrastructures, statistiques démographiques).
-2. **Développement du Webmapping** : Conception de l’interface utilisateur et implémentation des fonctionnalités interactives.
-3. **Déploiement** : Hébergement de la plateforme sur GitHub Pages.
+Tableaux de bord interactifs (diagrammes, indicateurs en temps réel).
+Cartes de chaleur pour repérer les disparités dans la ville.
 
----
+4. Fonctionnalités Avancées
+Outils d’Édition et de Dessin :
 
-## 📊 Intérêt du Tableau de Bord
-Le tableau de bord proposé centralise des données fiables pour permettre une meilleure compréhension des enjeux territoriaux et socio-économiques. Il est conçu pour être accessible et intuitif pour :
-- **Citoyens** : Explorer les données pour s’informer et participer aux débats publics.
-- **Urbanistes et Chercheurs** : Identifier les priorités en matière d’infrastructures et d’aménagement.
-- **Décideurs Politiques** : Prendre des décisions éclairées sur la base de données fiables.
+Outils de zoom et possibilité de changer la couche de base (photos aériennes, carte OSM, etc.).
+Interface responsive pour ordinateurs, tablettes et smartphones.
 
----
 
-## 📂 Structure des Données
-- **Recensement** : Population totale, par sexe, par région, département, et commune.
-- **Géographie** : Limites administratives, infrastructures, etc.
-- **Statistiques** : API des tendances démographiques et des indicateurs socio-économiques.
+🔍 Sources des Données
+Portail Données Montréal : Limites administratives, équipements municipaux, orthophotos, etc. https://donnees.montreal.ca/
+Données Québec : Infrastructures, LiDAR, statistiques démographiques pour la région métropolitaine. https://www.donneesquebec.ca/
+Statistique Canada : Données du recensement (population, logement), indicateurs socio-économiques. https://www.statcan.gc.ca/fr/debut
 
----
 
-## 🏆 Originalité du Thème
-- **Originalité** : Centralisation des données géospatiales et démographiques pour répondre aux besoins spécifiques du Mali.
-- **Jeux de Données** : Composantes temporelles, spatiales, qualitatives, et quantitatives clairement intégrées.
 
----
 
-## 🛠️ Technologies Utilisées
-- **Front-End** : HTML5, CSS3, JavaScript.
-- **Cartographie** : Leaflet, GeoJSON.
-- **Visualisation** : Chart.js.
-- **Base de Données** : PostgreSQL/PostGIS.
-- **Hébergement** : GitHub Pages.
+🚀 Méthodologie et Analyses
+Collecte des Données
 
----
+Intégration de sources ouvertes sur les arrondissements de Montréal, la démographie, les infrastructures, etc.
+Développement du Webmapping
 
-## 🌟 Exemple de Réalisation
-Mon exemple de desing est disponible ici : [GeoImpact ](https://geoimpact.ai/outil/visualisation/ctry=SEN&lvl=4&inds=+&base=SatLayer&proj=/). Ce portail met en évidence des fonctionnalités similaires en matière de visualisation géospatiale et statistique.
+Utilisation d’une bibliothèque JavaScript (Leaflet ou Mapbox GL) pour l’affichage cartographique interactif.
+Integration d’API ou de services web pour actualiser certaines données (ex. statistiques en temps réel).
+Analyses Spatiales
+
+Calculs de densité, de zones tampons.
+Agrégation et filtres par attributs (par arrondissements, par indicateurs socio-économiques, etc.).
+
+Déploiement
+
+Hébergement sur GitHub Pages.
+Configuration de la base de données PostgreSQL/PostGIS pour gérer les données géospatiales.
+
+
+📂 Structure des Données
+Données quantitatives : Population par arrondissement (densité de population par arrondissement).
+Données vectorielle : Limites administratives Réseau routier, bâtiments, parcs, écoles, bibliothèques, etc.
+Orthophotos : Images aériennes pour le contexte visuel basemap etc.
+LiDAR (optionnel) : Éléments 3D (hauteur des bâtiments) pour des analyses plus poussées.
+
+🏆 Originalité du Thème
+Adaptation Locale : Centralisation des données critiques pour la métropole de Montréal.
+Interopérabilité : Combinaison de données qualitatives, quantitatives, et 3D.
+
+
+🛠️ Technologies Utilisées
+Traitement et péparation des données : FME QGIS
+Front-End : HTML5, CSS3, JavaScript (Leaflet ou Mapbox GL).
+Visualisation : Chart.js ou D3.js pour les graphiques.
+Base de Données : PostgreSQL/PostGIS pour le stockage des données géospatiales.
+Hébergement : GitHub Pages.
+
+Exemple de Réalisation : GeoImpact (démonstration de fonctionnalités similaires d’un portail géospatial et statistique).  https://geoimpact.ai/home/
+
+🌟 Conclusion
+Le Géoportail Montréal présenté ici offre une vision unifiée de la ville et de ses arrondissements, permettant une meilleure planification urbaine, une participation citoyenne accrue et une gestion optimale des ressources. Grâce à l’intégration de données multiples (vectorielles, raster, 3D) et à une infrastructure adaptée (PostGIS + webmapping), ce projet ouvre la voie à des analyses spatiales et démographiques avancées pour tous les acteurs de la métropole.
