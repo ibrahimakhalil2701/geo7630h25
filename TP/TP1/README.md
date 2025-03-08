@@ -94,6 +94,8 @@ Configuration de la base de données PostgreSQL/PostGIS pour gérer les données
 📂 Structure des Données
 Données quantitatives : Population par arrondissement (densité de population par arrondissement). donnée limite statcan https://www12.statcan.gc.ca/census-recensement/2021/geo/sip-pis/boundary-limites/files-fichiers/lad_000b21a_f.zip,
 Données vectorielle : Limites administratives Réseau routier, bâtiments, parcs, écoles, bibliothèques, etc. limite administrative de montréal https://montreal-prod.storage.googleapis.com/resources/6b313375-d9bc-4dc3-af8e-ceae3762ae6e/limites-administratives-agglomeration-nad83.geojson?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=test-datapusher-delete%40amplus-data.iam.gserviceaccount.com%2F20250308%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20250308T032206Z&X-Goog-Expires=604800&X-Goog-SignedHeaders=host&x-goog-signature=1c70f3cc3a4e37c156d11e2b98e6e52af82d3c1ba62d17f1e14bf530223f822ee8e60e48b74e8e1fbd22215b80072f2a0f276d0dddae3657f069435c453d964746c8528d079e3fe5fd6ea2289b5ea5088d88984fc2c21b3c37144674e32e72993cce2ecef828a0f2da980025acb34b7153e824048ff7f92c7998a55488c88b73ae75bf68193aef82657e6d881a0d21a5b36b1caa0b7e62a82a373c1126643dee449866be6686944ea987404d19f955e38f901643e05d414aa776e8df0f191df42c09e8728aff4b8cf6a4da53ba60fd65c2d174c00c759cc0cff38ef8cb6c076fc1c009b7d7684f3f1036a212ea6112b6cc4c965a8795c39661298b186e1e1344
+
+
 Orthophotos : Images aériennes pour le contexte visuel basemap etc.
 LiDAR (optionnel) : Éléments 3D (hauteur des bâtiments) pour des analyses plus poussées.
 
