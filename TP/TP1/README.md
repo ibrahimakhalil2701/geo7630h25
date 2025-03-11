@@ -43,6 +43,36 @@
 
 ---
 
+
+
+📊 Données Utilisées
+Sources Principales
+Statistique Canada 2021
+Données socio-démographiques au niveau des aires de diffusion (DAUID)
+
+Ville de Montréal
+Limites administratives des arrondissements (Shapefile)
+
+Traitement des Données
+Reprojection : QGIS (NAD83 → Web Mercator)
+
+Nettoyage : FME (validation des géométries)
+
+Optimisation : Simplification des polygones pour le web
+
+
+
+
+Exemple d’Utilisation
+Sélection de la couche “Aires de diffusion” :
+Activez le calque via le menu latéral.
+
+Filtre sur le revenu médian :
+Ajustez le curseur “Revenu médian” pour n’afficher que les DAUID où le revenu est supérieur à 40 000 $.
+
+Comparaison multi-arrondissements :
+Cliquez sur plusieurs polygones pour voir les pop-ups et comparer la population, la densité, etc.
+
 ## 🏗 Architecture du Projet
 ```bash
 geoportail-montreal/
@@ -55,3 +85,9 @@ geoportail-montreal/
 │   └── aires_diffusion.json
 ├── index.html         # Structure principale
 └── README.md          # Documentation
+
+
+index.html : Contient la structure de la page (carte, menus, etc.).
+app.js : Charge les données GeoJSON, applique les filtres et gère l’interface de la carte.
+data/ : Contient les fichiers GeoJSON (ou shapefiles convertis) de StatCan et des arrondissements.
+doc/ : Documentation supplémentaire (schémas, explications).
