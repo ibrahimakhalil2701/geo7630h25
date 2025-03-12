@@ -96,18 +96,6 @@ Cliquez sur plusieurs polygones pour voir les pop-ups et comparer la population,
 
 
 
-## 🏗 Architecture du Projet
-```bash
-geoportail-montreal/
-├── public/
-│   ├── css/           # Styles personnalisés
-│   ├── js/            # Logique cartographique (app.js)
-│   └── assets/        # Icônes et images
-├── data/              # Jeux de données GeoJSON
-│   ├── arrondissements.json
-│   └── aires_diffusion.json
-├── index.html         # Structure principale
-└── README.md          # Documentation
 
 
 
