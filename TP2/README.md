@@ -9,7 +9,7 @@ Ce projet consiste à traiter des données géospatiales et statistiques pour pr
 ### Sources de données
 - 🗺 **`limites-administratives-agglomeration-nad83.geojson`**  
   Fichier GeoJSON des limites administratives (NAD83).  
-  ![Chargement GeoJSON](1.png)
+  ![Chargement GeoJSON](TP2/photo/1.png)
   ![Chargement GeoJSON](TP2/photo/2.png)
 
 - 📊 **`stat_can2021_recensement.csv`**  
