@@ -64,14 +64,19 @@
 - **Census Mapper**  
   *Cartographie avancée des données de recensement canadiennes*  
   **Inspiration clé :** Système de filtres multicritères.
+  > **Lien des données :** [Accéder au site](https://censusmapper.ca)  
 
 - **Données Ouvertes Montréal**  
   *Exemple concret : Carte des arbres publics*  
   **Fonctionnalité répliquée :** Légende interactive avec basculement de couches.
+   > **Lien des données :** [Accéder au site](https://censusmapper.ca)  
+
 
 - **Social Explorer**  
   *Bonnes pratiques : Comparaisons temporelles (2016 vs 2021)*  
   **Technologie adaptée :** Visualisations D3.js.
+   > **Lien des données :** [Accéder au site](https://censusmapper.ca)  
+
 
 ---
 
