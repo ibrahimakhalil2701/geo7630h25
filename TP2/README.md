@@ -143,11 +143,27 @@ Cette première capture d’écran montre la fenêtre **"Enregistrer le style de
 - Elle permet de **sauvegarder la symbologie** (couleurs, classification, etc.) au format `.qml` (QGIS Layer Style) ou `.sld` (Styled Layer Descriptor).  
 
 
-### 2. Carte stylisée : Densité de population par air de diffusion et Arrondissement
+### 2. Carte stylisée : Densité de population par aire de diffusion et Arrondissement
 ![Densité de population par arrondissement](image/33.png)
 
 La deuxième capture d’écran illustre la **carte finale** dans QGIS, avec :
 - Un **rendu gradué** allant du **bleu clair** (densité plus faible) au **bleu foncé** (densité plus élevée).    
 - Chaque polygone représente une **Aires de diffusion de StatCan**, et la couleur reflète la valeur de **population**.
+
+
+
+
+
+TP2/
+├── data/
+│   ├── aire_de_diffusion.gpkg
+│   ├── limites-administratives-agglomeration-nad83.geojson
+│   └── stat_can2021_recensement.csv
+├── fme/
+│   └── tp2.fmw
+├── image/
+├── qgis/
+│   └── TP2.qgz
+└── README.md
 
 
