@@ -4,7 +4,7 @@
 ![Version](https://img.shields.io/badge/Version-1.0.0-blue)
 
 **Un tableau de bord interactif pour explorer les données socio-démographiques de Montréal**  
-*Powered by Leaflet/Mapbox | Data: Statistics Canada 2021*
+
 
 ---
 
@@ -13,6 +13,7 @@
 - [✨ Fonctionnalités Clés](#-fonctionnalités-clés)
 - [🏗 Architecture du Projet](#-architecture-du-projet)
 - [📊 Données Utilisées](#-données-utilisées)
+- [🌍 Exemples de Sites Inspirants](#-exemples-de-sites-inspirants)
 - [🛠 Installation & Démarrage](#-installation--démarrage)
 - [🎯 Exemple d’Utilisation](#-exemple-dutilisation)
 - [🖼 Captures d’Écran](#-captures-décran)
@@ -43,6 +44,18 @@
 
 ---
 
+## 🏗 Architecture du Projet
+```bash
+geoportail-montreal/
+├── public/
+│   ├── css/           # Styles personnalisés
+│   ├── js/            # Logique cartographique (app.js)
+│   └── assets/        # Icônes et images
+├── data/              # Jeux de données GeoJSON
+│   ├── arrondissements.json
+│   └── aires_diffusion.json
+├── index.html         # Structure principale
+└── README.md          # Documentation
 
 
 📊 Données Utilisées
@@ -59,6 +72,25 @@ Reprojection : QGIS (NAD83 → Web Mercator)
 Nettoyage : FME (validation des géométries)
 
 Optimisation : Simplification des polygones pour le web
+
+
+
+🌍 Exemples de Sites Inspirants
+1. Census Mapper
+Cartographie avancée des données de recensement canadiennes
+
+Inspiration clé : Système de filtres multicritères
+
+2. Données Ouvertes Montréal
+Exemple concret : Carte des arbres publics
+
+Fonctionnalité répliquée : Légende interactive avec basculement de couches
+
+3. Social Explorer
+Bonnes pratiques : Comparaisons temporelles (2016 vs 2021)
+
+Technologie adaptée : Visualisations D3.js
+
 
 
 
