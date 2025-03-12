@@ -42,58 +42,49 @@
 
 
 
-##📊 Données Utilisées
-Sources Officielles
-📂 Statistique Canada 2021
-  
----Données socio-démographiques des aires de diffusion (DAUID).
+## 📊 Données Utilisées Sources Officielles
 
-🗺 Données ouvertes Montréal
-Limites administratives des arrondissements (Shapefile).
+- **Statistique Canada 2021**  
+  Données socio-démographiques des aires de diffusion (DAUID).
 
-Traitement des Données
-Conversion :
-Shapefile → GeoJSON via QGIS.
+- **Données ouvertes Montréal**  
+  Limites administratives des arrondissements (Shapefile).
 
-Nettoyage :
-Validation des géométries avec FME.
+**Traitement des Données :**  
+- **Conversion :** Shapefile → GeoJSON via QGIS.  
+- **Nettoyage :** Validation des géométries avec FME.  
+- **Optimisation :** Simplification topologique avec Mapshaper.
 
-Optimisation :
-Simplification topologique avec Mapshaper :
+> **Lien des données :** [Accéder aux données](https://drive.google.com/drive/u/0/folders/159cZmz_XU4CxS5tfzuFcpOks9_qQNcCA)
 
-liens des données https://drive.google.com/drive/u/0/folders/159cZmz_XU4CxS5tfzuFcpOks9_qQNcCA
+---
 
+## 🌍 Exemples de Sites Inspirants
 
+- **Census Mapper**  
+  *Cartographie avancée des données de recensement canadiennes*  
+  **Inspiration clé :** Système de filtres multicritères.
 
-##🌍 Exemples de Sites Inspirants
-1. Census Mapper
-Cartographie avancée des données de recensement canadiennes
+- **Données Ouvertes Montréal**  
+  *Exemple concret : Carte des arbres publics*  
+  **Fonctionnalité répliquée :** Légende interactive avec basculement de couches.
 
-Inspiration clé : Système de filtres multicritères
+- **Social Explorer**  
+  *Bonnes pratiques : Comparaisons temporelles (2016 vs 2021)*  
+  **Technologie adaptée :** Visualisations D3.js.
 
-2. Données Ouvertes Montréal
-Exemple concret : Carte des arbres publics
+---
 
-Fonctionnalité répliquée : Légende interactive avec basculement de couches
+## Exemple d’Utilisation
 
-3. Social Explorer
-Bonnes pratiques : Comparaisons temporelles (2016 vs 2021)
+- **Sélection de la couche “Aires de diffusion” :**  
+  Activez le calque via le menu latéral.
 
-Technologie adaptée : Visualisations D3.js
+- **Filtre sur le revenu médian :**  
+  Ajustez le curseur “Revenu médian” pour n’afficher que les DAUID où le revenu est supérieur à 40 000 $.
 
-
-
-
-
-##Exemple d’Utilisation
-Sélection de la couche “Aires de diffusion” :
-Activez le calque via le menu latéral.
-
-Filtre sur le revenu médian :
-Ajustez le curseur “Revenu médian” pour n’afficher que les DAUID où le revenu est supérieur à 40 000 $.
-
-Comparaison multi-arrondissements :
-Cliquez sur plusieurs polygones pour voir les pop-ups et comparer la population, la densité, etc.
+- **Comparaison multi-arrondissements :**  
+  Cliquez sur plusieurs polygones pour voir les pop-ups et comparer la population, la densité, etc.
 
 
 
