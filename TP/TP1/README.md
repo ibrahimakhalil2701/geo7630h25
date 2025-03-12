@@ -73,6 +73,8 @@ Nettoyage : FME (validation des géométries)
 
 Optimisation : Simplification des polygones pour le web
 
+liens des données https://drive.google.com/drive/u/0/folders/159cZmz_XU4CxS5tfzuFcpOks9_qQNcCA
+
 
 
 🌍 Exemples de Sites Inspirants
