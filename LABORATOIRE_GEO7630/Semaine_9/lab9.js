@@ -31,11 +31,11 @@ var geoJSONcontent
 
 function handleFileSelect(evt) {
     // On declare la variable qui contiendra le fichier
-    var file = evt.target.files[0]; 
+    var file = evt.target.files[0];
 
     // On declare la fonction native FileReader() ...
     // ... NATIVE car elle est inclue dans tous les navigateurs il n'est donc pas necessaire d'utiliser une api particuliere
-    var reader = new FileReader(); 
+    var reader = new FileReader();
 
     // la fonction reader expose plusieurs evenements qu'on peut ecouter
     // ScreenShot 
@@ -80,7 +80,7 @@ function handleFileSelect(evt) {
     reader.readAsText(file, 'UTF-8');
 }
 // Ici on initialise la fonction qui va nous permettre de zoomer sur notre geojson
-function zoomToGeoJSON () {
+function zoomToGeoJSON() {
     // L'objet map expose une methode qui permet de zoomer sur une entite geographique
     // fitbounds : https://docs.mapbox.com/mapbox-gl-js/api/map/#map#fitbounds
     // fitbounds prend en parametre un bbox 2 coordonnes pour fomer un bbox rectangle
@@ -89,11 +89,11 @@ function zoomToGeoJSON () {
     // Les types de bbox attendu est de type [sw, ne] order, or an array of numbers in [west, south, east, north] order.
     // eX : map.fitBounds([[-73.9876, 40.7661], [-73.9397, 40.8002]]) 
     // eX : map.fitBounds([[-73.9876, 40.7661], [-73.9397, 40.8002],[-73.9876, 40.7661], [-73.9397, 40.8002]]) 
-        map.fitBounds(geojsonExtent(geoJSONcontent));
+    map.fitBounds(geojsonExtent(geoJSONcontent));
 }
 
 // Ici on initialise la fonction qui va nous permettre de colorier notre geojson
-function colorPolygons () {
+function colorPolygons() {
     // L'objet map expose une methode qui permet de changer les proprietes esthetiques d'un layer
     // setPaintProperty(identifiant du layer, propriete a changer, valeur de la propriete que vous voulez donner)
     // Documentation : https://docs.mapbox.com/mapbox-gl-js/api/map/#map#setpaintproperty
