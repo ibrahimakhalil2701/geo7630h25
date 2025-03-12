@@ -15,16 +15,16 @@ Ce projet consiste à traiter des données géospatiales et statistiques pour pr
 
 - 📊 **`stat_can2021_recensement.csv`**  
   Données de recensement 2021 de Statistique Canada.  
-  ![Chargement CSV](TP2/photo/3.png)
-  ![Chargement CSV](TP2/photo/4.png)
+  ![Chargement CSV](image/image3.png)
+  ![Chargement CSV](image/image4.png)
 
 - 🔷 **`decoup.shp`**  
   Shapefile des aires de diffusion (DA).  
-  ![Chargement Shapefile](TP2/photo/5.png)
+  ![Chargement Shapefile](image/image5.png)
 
 
 ### Connexion des sources
-Les données sont chargées et dirigées vers l'étape de **Reprojection (EPSG:3857)**.
+Les données sont chargées et dirigées vers l'étape de **Reprojection (EPSG:32198)**.
 
 ---
 
@@ -32,11 +32,16 @@ Les données sont chargées et dirigées vers l'étape de **Reprojection (EPSG:3
 
 ### 🔄 Reprojection (NAD83 → Web Mercator)
 - **Reprojector**  
-  Les données géospatiales sont reprojetées du système de coordonnées NAD83 vers Web Mercator (EPSG:3857), une projection couramment utilisée pour les applications web cartographiques.
+  Les données géospatiales sont reprojetées du système de coordonnées NAD83 vers Web Mercator (EPSG:32198).
+  ![Reprojector](image/image6.png)
+  ![Reprojector](image/image7.png)
 
-### 🔗 Jointure DAUID
+### 🔗 Jointure DAUID **`données des aires de diffusion et csv`**  
 - **FeatureJoiner**  
-  Une jointure interne (Inner Join) est effectuée entre les données géospatiales (DAUID) et les données statistiques du fichier CSV. La clé de jointure est l'identifiant DAUID.
+  Une jointure interne (Inner Join) est effectuée entre les données géospatiales (Aires de diffusion) et les données statistiques du fichier CSV. La clé de jointure est l'identifiant DAUID.
+
+  ![Jointure](image/image8.png)
+  ![Jointure](image/image9.png)
 
 ### 🧹 Nettoyage des données
 1. **NullAttributeMapper**  
