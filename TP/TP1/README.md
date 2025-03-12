@@ -14,12 +14,8 @@
 - [🏗 Architecture du Projet](#-architecture-du-projet)
 - [📊 Données Utilisées](#-données-utilisées)
 - [🌍 Exemples de Sites Inspirants](#-exemples-de-sites-inspirants)
-- [🛠 Installation & Démarrage](#-installation--démarrage)
 - [🎯 Exemple d’Utilisation](#-exemple-dutilisation)
-- [🖼 Captures d’Écran](#-captures-décran)
-- [🗺 Feuille de Route](#-feuille-de-route)
-- [👥 Contributeurs](#-contributeurs)
-- [📜 Licence](#-licence)
+
 
 ---
 
@@ -57,7 +53,7 @@ geoportail-montreal/
 ├── index.html         # Structure principale
 └── README.md          # Documentation
 
-📊 Données Utilisées
+##📊 Données Utilisées
 Sources Officielles
 📂 Statistique Canada 2021
 Données socio-démographiques des aires de diffusion (DAUID).
@@ -79,7 +75,7 @@ liens des données https://drive.google.com/drive/u/0/folders/159cZmz_XU4CxS5tfz
 
 
 
-🌍 Exemples de Sites Inspirants
+##🌍 Exemples de Sites Inspirants
 1. Census Mapper
 Cartographie avancée des données de recensement canadiennes
 
@@ -99,7 +95,7 @@ Technologie adaptée : Visualisations D3.js
 
 
 
-Exemple d’Utilisation
+##Exemple d’Utilisation
 Sélection de la couche “Aires de diffusion” :
 Activez le calque via le menu latéral.
 
