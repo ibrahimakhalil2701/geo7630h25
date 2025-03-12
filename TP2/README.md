@@ -4,6 +4,18 @@ Ce projet consiste à traiter des données géospatiales et statistiques pour pr
 
 ---
 
+
+
+
+## 🛠️ Le schéma explicatif
+- ## 📊 Schéma du Processus de Données
+
+Voici le schéma expliquant le flux de travail utilisé dans ce projet :
+
+![Schéma du Processus](image/schema.png)
+
+
+
 ## Étape 1 : Chargement des données
 
 ### Sources de données
