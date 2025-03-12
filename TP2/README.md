@@ -134,5 +134,20 @@ Les données traitées sont exportées dans la bd pour une visualisatin dans QGI
 ## Résultat final
 Le processus génère des données géospatiales et statistiques nettoyées, enrichies et prêtes à être utilisées dans des analyses ou des visualisations cartographiques.
 
-![Résultat final](image/image29.png)
-![Résultat final](image/image30.png)
+## Présentation des deux cartes QGIS
+
+### 1. Enregistrer le style de la couche
+![Enregistrer le style de la couche](image/31.png)
+
+Cette première capture d’écran montre la fenêtre **"Enregistrer le style de la couche"** dans QGIS.  
+- Elle permet de **sauvegarder la symbologie** (couleurs, classification, etc.) au format `.qml` (QGIS Layer Style) ou `.sld` (Styled Layer Descriptor).  
+
+
+### 2. Carte stylisée : Densité de population par air de diffusion et Arrondissement
+![Densité de population par arrondissement](image/33.png)
+
+La deuxième capture d’écran illustre la **carte finale** dans QGIS, avec :
+- Un **rendu gradué** allant du **bleu clair** (densité plus faible) au **bleu foncé** (densité plus élevée).    
+- Chaque polygone représente une **Aires de diffusion de StatCan**, et la couleur reflète la valeur de **population**.
+
+
