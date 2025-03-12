@@ -7,14 +7,18 @@ Ce projet consiste à traiter des données géospatiales et statistiques pour pr
 ## Étape 1 : Chargement des données
 
 ### Sources de données
-- 🗺 **limites-administratives-agglomeration-nad83.geojson**  
-  Fichier GeoJSON contenant les limites administratives de l'agglomération en projection NAD83.
+- 🗺 **`limites-administratives-agglomeration-nad83.geojson`**  
+  Fichier GeoJSON des limites administratives (NAD83).  
+  ![Chargement GeoJSON](screenshots/1_chargement_geojson.png)
 
-- 📊 **stat_can2021_recensement.csv**  
-  Fichier CSV contenant les données de recensement 2021 de Statistique Canada.
+- 📊 **`stat_can2021_recensement.csv`**  
+  Données de recensement 2021 de Statistique Canada.  
+  ![Chargement CSV](screenshots/1_chargement_csv.png)
 
-- 🔷 **da_1.shp**  
-  Fichier Shapefile représentant les aires de diffusion (DA) avec des données géospatiales.
+- 🔷 **`decoup.shp`**  
+  Shapefile des aires de diffusion (DA).  
+  ![Chargement Shapefile](screenshots/1_chargement_shp.png)
+
 
 ### Connexion des sources
 Les données sont chargées et dirigées vers l'étape de **Reprojection (EPSG:3857)**.
