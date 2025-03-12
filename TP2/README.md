@@ -154,16 +154,19 @@ La deuxième capture d’écran illustre la **carte finale** dans QGIS, avec :
 
 
 
+## 🏗️ Architecture du Projet
+
+```plaintext
 TP2/
-├── data/
+├── data/                 # Données d'entrée et de sortie
 │   ├── aire_de_diffusion.gpkg
 │   ├── limites-administratives-agglomeration-nad83.geojson
 │   └── stat_can2021_recensement.csv
-├── fme/
+├── fme/                  # Scripts et traitements FME
 │   └── tp2.fmw
-├── image/
-├── qgis/
+├── image/                # Captures d'écran et images du projet
+├── qgis/                 # Projet QGIS
 │   └── TP2.qgz
-└── README.md
+└── README.md             # Documentation du projet
 
 
