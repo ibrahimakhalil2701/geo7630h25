@@ -57,21 +57,23 @@ geoportail-montreal/
 ├── index.html         # Structure principale
 └── README.md          # Documentation
 
-
 📊 Données Utilisées
-Sources Principales
-Statistique Canada 2021
-Données socio-démographiques au niveau des aires de diffusion (DAUID)
+Sources Officielles
+📂 Statistique Canada 2021
+Données socio-démographiques des aires de diffusion (DAUID).
 
-Ville de Montréal
-Limites administratives des arrondissements (Shapefile)
+🗺 Données ouvertes Montréal
+Limites administratives des arrondissements (Shapefile).
 
 Traitement des Données
-Reprojection : QGIS (NAD83 → Web Mercator)
+Conversion :
+Shapefile → GeoJSON via QGIS.
 
-Nettoyage : FME (validation des géométries)
+Nettoyage :
+Validation des géométries avec FME.
 
-Optimisation : Simplification des polygones pour le web
+Optimisation :
+Simplification topologique avec Mapshaper :
 
 liens des données https://drive.google.com/drive/u/0/folders/159cZmz_XU4CxS5tfzuFcpOks9_qQNcCA
 
