@@ -108,7 +108,7 @@ Comparaison multi-arrondissements :
 Cliquez sur plusieurs polygones pour voir les pop-ups et comparer la population, la densité, etc.
 
 ## 🏗 Architecture du Projet
-```bash
+
 geoportail-montreal/
 ├── public/
 │   ├── css/           # Styles personnalisés
