@@ -101,6 +101,7 @@ Cliquez sur plusieurs polygones pour voir les pop-ups et comparer la population,
 
 ## 🏗 Architecture du Projet
 
+```bash
 geoportail-montreal/
 ├── public/
 │   ├── css/           # Styles personnalisés
@@ -111,9 +112,3 @@ geoportail-montreal/
 │   └── aires_diffusion.json
 ├── index.html         # Structure principale
 └── README.md          # Documentation
-
-
-index.html : Contient la structure de la page (carte, menus, etc.).
-app.js : Charge les données GeoJSON, applique les filtres et gère l’interface de la carte.
-data/ : Contient les fichiers GeoJSON (ou shapefiles convertis) de StatCan et des arrondissements.
-doc/ : Documentation supplémentaire (schémas, explications).
