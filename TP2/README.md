@@ -9,15 +9,17 @@ Ce projet consiste à traiter des données géospatiales et statistiques pour pr
 ### Sources de données
 - 🗺 **`limites-administratives-agglomeration-nad83.geojson`**  
   Fichier GeoJSON des limites administratives (NAD83).  
-  ![Chargement GeoJSON](screenshots/1_chargement_geojson.png)
+  ![Chargement GeoJSON](TP2/photo/1.png)
+  ![Chargement GeoJSON](TP2/photo/2.png)
 
 - 📊 **`stat_can2021_recensement.csv`**  
   Données de recensement 2021 de Statistique Canada.  
-  ![Chargement CSV](screenshots/1_chargement_csv.png)
+  ![Chargement CSV](TP2/photo/3.png)
+  ![Chargement CSV](TP2/photo/4.png)
 
 - 🔷 **`decoup.shp`**  
   Shapefile des aires de diffusion (DA).  
-  ![Chargement Shapefile](screenshots/1_chargement_shp.png)
+  ![Chargement Shapefile](TP2/photo/5.png)
 
 
 ### Connexion des sources
