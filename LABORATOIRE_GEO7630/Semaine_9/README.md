@@ -34,7 +34,7 @@ Ce projet illustre la création d'une carte interactive avec MapLibreGL, en mett
 
 ## 📂 Étapes du projet
 
-### 1.  1. Configuration initiale et modification des coordonnées
+###  1. Configuration initiale et modification des coordonnées
 - Modification des coordonnées
 
 
@@ -47,11 +47,11 @@ center: [-73.60, 45.50], // Nouveau centre
 zoom: 12 // Zoom renforcé
 
 
-#Résultat :
+Résultat :
 Carte centrée sur Montréal
 - Processus :
-  ![Lecture du fichier](LABORATOIRE_GEO7630/Semaine_9/photo/1.png)
-  ![Lecture du fichier](LABORATOIRE_GEO7630/Semaine_9/photo/2.png)
-  ![Modification des coordonnées et du niveau de zoom](LABORATOIRE_GEO7630/Semaine_9/photo/3.png)
+  ![Lecture du fichier](Semaine_9/photo/1.png)
+  ![Lecture du fichier](Semaine_9/photo/2.png)
+  ![Modification des coordonnées et du niveau de zoom](Semaine_9/photo/3.png)
 
 ### 1. Lecture du fichier CSV dans FME
