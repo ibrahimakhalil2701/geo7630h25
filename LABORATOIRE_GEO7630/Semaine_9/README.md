@@ -48,7 +48,8 @@ zoom: 10
 center: [-73.60, 45.50], // Nouveau centre
 zoom: 12 // Zoom renforcé
 
-```javascript
+```
+
 
 Résultat :
 Carte centrée sur Montréal
