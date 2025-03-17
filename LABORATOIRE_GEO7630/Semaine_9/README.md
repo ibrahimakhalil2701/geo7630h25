@@ -36,7 +36,7 @@ Ce projet illustre la création d'une carte interactive avec MapLibreGL, en mett
 
 ### 1.  1. Configuration initiale et modification des coordonnées
 - Modification des coordonnées
-Fichier : lab9.js
+
 
 // Avant
 center: [-73.55, 45.55], 
@@ -46,6 +46,9 @@ zoom: 10
 center: [-73.60, 45.50], // Nouveau centre
 zoom: 12 // Zoom renforcé
 
+
+#Résultat :
+Carte centrée sur Montréal
 - Processus :
   ![Lecture du fichier](LABORATOIRE_GEO7630/Semaine_9/photo/1.png)
   ![Lecture du fichier](LABORATOIRE_GEO7630/Semaine_9/photo/2.png)
