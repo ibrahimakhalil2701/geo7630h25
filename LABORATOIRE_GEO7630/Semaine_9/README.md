@@ -50,8 +50,8 @@ zoom: 12 // Zoom renforcé
 Résultat :
 Carte centrée sur Montréal
 - Processus :
-  ![Lecture du fichier](Semaine_9/photo/1.png)
-  ![Lecture du fichier](Semaine_9/photo/2.png)
-  ![Modification des coordonnées et du niveau de zoom](Semaine_9/photo/3.png)
+  ![Lecture du fichier](photo/1.png)
+  ![Lecture du fichier](photo/2.png)
+  ![Modification des coordonnées et du niveau de zoom](photo/3.png)
 
 ### 1. Lecture du fichier CSV dans FME
