@@ -152,7 +152,7 @@ map.setPaintProperty('garages-layer', 'fill-color', {
 
 🔹 Résultat attendu :
 - Processus :
-  - Les polygones auront des couleurs différentes en fonction de leurs attributs..![Lecture du fichier](photo/9.png)
+  - Les polygones auront des couleurs différentes en fonction de leurs attributs..![Lecture du fichier](photo/10.png)
 
 
 
