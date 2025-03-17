@@ -1,4 +1,3 @@
-markdown
 # 🛰 Laboratoire 9 : Webmapping Open Source avec MapLibreGL
 
 **Développé par [Votre Nom]**  
@@ -14,9 +13,9 @@ markdown
 ---
 
 ## 📋 Objectifs
-Ce laboratoire permet de maîtriser :
+Ce laboratoire vous permettra de maîtriser :
 - 🎯 Modification de coordonnées et niveau de zoom
-- 🎨 Personnalisation de couleurs de polygones
+- 🎨 Personnalisation des couleurs de polygones
 - 🌈 Génération de couleurs aléatoires
 - 🗺 Symbologie thématique par attribut
 - 🔤 Ajout d'étiquettes dynamiques
@@ -26,55 +25,48 @@ Ce laboratoire permet de maîtriser :
 
 ## 🚀 Mise en œuvre
 
-### 1. Configuration initiale
 ```bash
+# Étape 1 : Configuration initiale
 git clone https://github.com/Captain-Oski/GEO7630_H25
 cd GEO7630_H25
 git checkout -b votrepseudo-labo9
-2. Modification des coordonnées
-Fichier : lab9.js
 
-javascript
-// Avant
+# Étape 2 : Modification des coordonnées
+# Fichier : lab9.js
+
+# Avant modification :
 center: [-73.55, 45.55], 
 zoom: 10
 
-// Après
-center: [-73.60, 45.50], // Nouveau centre
-zoom: 12 // Zoom renforcé
-Résultat : Carte centrée sur Montréal
+# Après modification :
+center: [-73.60, 45.50], # Nouveau centre
+zoom: 12 # Zoom renforcé
 
-3. Personnalisation des couleurs
-Fichier : lab9.js
+# Résultat : La carte est maintenant centrée sur Montréal.
 
-javascript
-// Modification de la couleur fixe
+# Étape 3 : Personnalisation des couleurs
+# Fichier : lab9.js
 function colorPolygons() {
   map.setPaintProperty('garages-layer', 'fill-color', '#9f40ff');
 }
-Avant/Après : Comparaison des couleurs
+# Résultat : Une comparaison des couleurs montre le changement effectué.
 
-4. Génération de couleurs aléatoires
-Fichier : randomColor.js
-
-javascript
+# Étape 4 : Génération de couleurs aléatoires
+# Fichier : randomColor.js
 function randomColor() {
   const r = Math.floor(Math.random() * 256);
   const g = Math.floor(Math.random() * 256);
   const b = Math.floor(Math.random() * 256);
   return `#${(1 << 24 | r << 16 | g << 8 | b).toString(16).slice(1)}`;
 }
-Intégration :
 
-html
-<!-- Ajout dans index.html -->
+# Intégration dans index.html
 <script src='./randomColor.js'></script>
-Résultat : Couleurs aléatoires générées
 
-5. Symbologie thématique
-Fichier : lab9.js
+# Résultat : Les couleurs générées aléatoirement s'affichent sur la carte.
 
-javascript
+# Étape 5 : Symbologie thématique
+# Fichier : lab9.js
 map.setPaintProperty('garages-layer', 'fill-color', {
   property: 'operator_id',
   stops: [
@@ -86,12 +78,10 @@ map.setPaintProperty('garages-layer', 'fill-color', {
     [30, randomColor()]
   ]
 });
-Résultat : Carte thématique basée sur l'attribut
+# Résultat : Les polygones sont colorés en fonction de l'attribut operator_id.
 
-6. Étiquettes dynamiques
-Ajout dans lab9.js :
-
-javascript
+# Étape 6 : Ajout d'étiquettes dynamiques
+# Fichier : lab9.js
 map.addLayer({
   'id': 'geojson-label',
   'type': 'symbol',
@@ -104,34 +94,4 @@ map.addLayer({
     'text-halo-width': 2
   }
 });
-Résultat : Étiquettes dynamiques des opérateurs affichées
-
-🔄 Gestion de version GitHub
-bash
-git add .
-git commit -m "Labo9: Coordonnées, couleurs dynamiques, étiquettes"
-git push origin votrepseudo-labo9
-📂 Structure du projet
-plaintext
-GEO7630_H25/
-├── index.html
-├── lab9.js
-├── randomColor.js
-├── data/
-│   └── garages.geojson
-└── screenshots/
-    ├── coord-modifiees.jpg
-    ├── couleurs-aleatoires.gif
-    └── thematique-operator.jpg
-🏆 Bilan technique
-Compétence	Technologies	Résultat
-Manipulation cartographique	MapLibreGL	✅
-Génération algorithmique	JavaScript	✅
-Gestion de styles	CSS/JSON	✅
-Versionnement	Git/GitHub	✅
-➡️ Prochaines étapes
-Intégrer des popups interactives
-
-Ajouter un sélecteur de couches
-
-Implémenter une recherche spatiale
+# Résultat : Les étiquettes sont ajoutées dynamiquement sur la carte.
