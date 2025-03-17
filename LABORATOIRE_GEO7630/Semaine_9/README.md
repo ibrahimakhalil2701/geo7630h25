@@ -7,20 +7,19 @@ Ce projet illustre la création d'une carte interactive avec MapLibreGL, en mett
 ---
 
 ## 🎯 Objectifs
-Ce laboratoire a pour but de vous familiariser avec **MapLibreGL** et le **Webmapping Open Source**. Vous apprendrez à :
+Ce laboratoire a pour but de se familiariser avec **MapLibreGL** et le **Webmapping Open Source**. apprends à :
 
 - 🎯 Modifier les **coordonnées et le niveau de zoom** d’une carte.
 - 🎨 **Personnaliser les couleurs** des polygones affichés.
 - 🌈 Générer **des couleurs aléatoires** pour styliser les données.
 - 🗺 Appliquer une **symbologie thématique** en fonction des attributs.
 - 🔤 Ajouter **des étiquettes dynamiques** sur la carte.
-- 📌 Utiliser **Git et GitHub** pour gérer vos versions de code.
 
 
 ---
 
 ## ✏️ Tâches
-1. Configurer votre projet initial avec GitHub.
+1. Configurer un projet initial avec GitHub.
 2. Apporter des modifications aux coordonnées et au zoom.
 3. Personnaliser les couleurs des polygones sur la carte.
 4. Implémenter une génération de couleurs aléatoires.
@@ -39,7 +38,7 @@ Ce laboratoire a pour but de vous familiariser avec **MapLibreGL** et le **Webma
 ## 📂 Étapes du projet
 
 ###  1. Configuration initiale et modification des coordonnées
-Dans ce premier exercice, vous allez modifier le centre de la carte et ajuster son niveau de zoom.
+Dans ce premier exercice, nous allons modifier le centre de la carte et ajuster son niveau de zoom.
 - Modification des coordonnées
 
 
@@ -62,10 +61,10 @@ zoom: 12 // Zoom renforcé
 La carte est maintenant centrée sur Montréal avec un niveau de zoom plus détaillé.
 - Processus :
   - Lecture du fichier![Lecture du fichier](photo/1.png)
-  - Lecture du fichier]![Lecture du fichier](photo/2.png)
+  - Lecture du fichier![Lecture du fichier](photo/2.png)
   - Modification des coordonnées et du niveau de zoom![Modification des coordonnées et du niveau de zoom](photo/3.png)
-  - chargement des garages pour tester]![Lecture du fichier](photo/4.png)
-  - le resulat]![Lecture du fichier](photo/5.png)
+  - chargement des garages pour tester![Lecture du fichier](photo/4.png)
+  - le resulat![Lecture du fichier](photo/5.png)
   
 
 
@@ -101,7 +100,7 @@ Pour éviter d’avoir une seule couleur statique, nous allons implémenter une 
 
  - 📌 Fichier à créer : randomColor.js
 
-Ajoutez le code suivant :
+Ajouter le code suivant :
 
 ```JavaScript
 function randomColor() {
@@ -112,7 +111,7 @@ function randomColor() {
 }
 
 ```
-Ensuite, intégrez cette fonction dans index.html pour qu’elle puisse être utilisée par votre carte :
+Ensuite, nous allons intégrer cette fonction dans labo9.html pour qu’elle puisse être utilisée par notre carte :
 
 ```HTML
 <!-- Ajout dans index.html -->
@@ -132,7 +131,7 @@ Nous allons maintenant appliquer une couleur différente en fonction des valeurs
 
 - 📌 Fichier à modifier : lab9.js
 
-Ajoutez le code suivant pour colorer chaque polygone selon sa valeur operator_id :
+Ajouter le code suivant pour colorer chaque polygone selon sa valeur operator_id :
 
 ```JavaScript
 
@@ -152,7 +151,7 @@ map.setPaintProperty('garages-layer', 'fill-color', {
 
 🔹 Résultat attendu :
 - Processus :
-  - Les polygones auront des couleurs différentes en fonction de leurs attributs..![Lecture du fichier](photo/10.png)
+  - Les polygones auront des couleurs différentes en fonction de leurs attributs..![Lecture du fichier](photo/9.png)
 
 
 
@@ -162,7 +161,7 @@ Nous allons maintenant ajouter des étiquettes dynamiques basées sur l’attrib
 
 - 📌 Fichier à modifier : lab9.js
 
-Ajoutez le code suivant :
+Ajouter le code suivant :
 
 ```JavaScript
 map.addLayer({
@@ -181,20 +180,25 @@ map.addLayer({
 ```
 🔹 Résultat attendu :
 - Processus :
-   - Chaque polygone affiche désormais un texte représentant son operator_id.![Lecture du fichier](photo/9.png)
+   - Chaque polygone affiche désormais un numéro représentant son operator_id.![Lecture du fichier](photo/10.png)
 
 
 
 
-## 📂 Structure du projet
-Le projet contient les fichiers suivants :
+# 📂 Structure du Projet : Semaine_9
 
+Ce dossier contient les fichiers nécessaires pour le laboratoire 9.
 
+---
+
+## 📁 Contenu du dossier
+
+```plaintext
 Semaine_9/
-├── labo9.html
-├── lab9.js
-├── randomColor.js
-├── labo9.css
-├── README.md
-├── garage.geojson
+├── labo9.html         # Fichier principal de l'interface utilisateur
+├── lab9.js            # Script JavaScript pour les fonctionnalités principales
+├── randomColor.js     # Script JavaScript pour la génération de couleurs aléatoires
+├── labo9.css          # Feuille de style CSS pour la mise en page
+├── README.md          # Documentation du projet
+├── garage.geojson     # Fichier GeoJSON contenant des données géospatiales
 
