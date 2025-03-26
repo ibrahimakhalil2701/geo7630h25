@@ -1,0 +1,13 @@
+version: "3.4"
+services:
+  server-web:
+    image: nginx
+    ports:
+      - 8000:80
+    volumes:
+      - ./app/:/usr/share/nginx/html
+      - ../Laboratoires/Lab 9/:/usr/share/nginx/html/lab9
+      - ../Laboratoires/Lab 11/:/usr/share/nginx/html/modules/lab11
+      - ../Exam/Exam2/:/usr/share/nginx/html/exam2
+    restart: always
+  
