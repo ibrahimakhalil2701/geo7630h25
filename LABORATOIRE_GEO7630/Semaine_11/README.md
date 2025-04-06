@@ -16,13 +16,13 @@ Ce laboratoire vise à construire une application web de cartographie interactiv
 ## 📊 ÉTAPE 1 – Faire rouler le server et Initialisation de la carte
 
 
-
 📸 *Capture du processus
   ![Processu](photo/1.png)
   ![Processu](photo/2.png)
   ![Processu](photo/3.png)
   ![Processu](photo/4.png)
   ![Processu](photo/5.png)
+
 
 ### 📄 Fichier : `map-controls.js`
 
@@ -35,8 +35,6 @@ var map = new maplibregl.Map({
   center: [-73.56, 45.51],
   zoom: 11
 });
-
- ![Processu](photo/6.png)
 
 
 var nav = new maplibregl.NavigationControl({ showCompass: true });
@@ -51,6 +49,13 @@ map.addControl(geolocate, 'bottom-right');
 var scale = new maplibregl.ScaleControl({ unit: 'metric' });
 map.addControl(scale);
 ```
+
+📸 *Capture du processus
+  ![Processu](photo/6.png)
+  ![Processu](photo/8.png)
+  ![Processu](photo/9.png)
+  ![Processu](photo/10.png)
+  ![Processu](photo/11.png)
 
 ---
 
@@ -130,6 +135,12 @@ var arrondissementsLabel = {
 };
 ```
 
+
+📸 *Capture du processus
+  ![Processu](photo/12.png)
+  ![Processu](photo/13.png)
+  ![Processu](photo/14.png)
+  
 ---
 
 ## 🚀 ÉTAPE 3 – Chargement dynamique des couches
@@ -146,7 +157,8 @@ map.on('load', function () {
   map.addLayer(arrondissementsLabel);
 });
 ```
-
+📸 *Capture du processus
+  ![Processu](photo/16.png)
 ---
 
 ## 🚗 ÉTAPE 4 – Contrôles souris et interactions
@@ -175,15 +187,11 @@ map.on('click', 'commerces', (e) => {
 });
 ```
 
----
-
-## 🎓 ÉTAPE 5 – Extensions possibles
-
-- Ajouter un `<select>` HTML pour filtrer dynamiquement les types de commerces
-- Ajouter un mini dashboard : nombre de commerces par arrondissement
-- Créer un panneau latéral avec les détails de l'entité sélectionnée
+📸 *Capture du processus
+  ![Processu](photo/15.png)
 
 ---
+
 
 ## 🔹 Résultat attendu
 
@@ -192,9 +200,10 @@ Une carte centrée sur Montréal avec :
 - Polygones des arrondissements avec labels
 - Interactions intuitives (hover, clic, popup)
 
-> Ce labo renforce vos compétences en cartographie web avec MapLibre, en gestion de couches et interactions.
+📸 *Capture du processus
+  ![Processu](photo/17.png)
+    ![Processu](photo/18.png)
 
----
 
-Tu veux que je t'aide à créer la structure de fichiers ou une page HTML prête à déployer ?
+> Ce labo renforce mes compétences en cartographie web avec MapLibre, en gestion de couches et interactions.
 
