@@ -26,7 +26,9 @@
   - Créer un filtre sur `longitude != -1`
   - Gérer les cas de stations mal géolocalisées
 
-📸 *Capture suggérée : configuration de l'AttributeFilter avec conditions appliquées.*
+📸 *Capture du processus
+  ![Processu](photo/2.png)
+  ![Processu](photo/3.png)
 
 ### 📊 Étape 3 : Calcul des statistiques avec `StatisticsCalculator`
 - **Objectif** : Calculer le total des arrivées et des départs par station
@@ -34,13 +36,18 @@
   - `StatisticsCalculator` sur `emplacement_pk_end` → total des **arrivées**
   - `StatisticsCalculator` sur `emplacement_pk_start` → total des **dépôts**
 
-📸 *Capture suggérée : statistiques configurées sur les ports appropriés.*
+📸 *Capture du processus
+  ![Processu](photo/4.png)
+  ![Processu](photo/5.png)
+  ![Processu](photo/6.png)
 
 ### ✏️ Étape 4 : Nettoyage des attributs avec `AttributeManager`
 - Supprimer les attributs inutiles
 - Renommer les champs (ex : `pk`, `start_total_count`, `end_total_count`)
 
-📸 *Capture suggérée : aperçu de l'AttributeManager avec les renommages effectués.*
+📸 *Capture du processus
+  ![Processu](photo/7.png)
+  ![Processu](photo/8.png)
 
 ### 🔗 Étape 5 : Jointures des données avec `FeatureJoiner`
 - **But** : Associer les données des départs et arrivées aux coordonnées des stations
@@ -49,7 +56,15 @@
   - 2e `FeatureJoiner` pour joindre les **arrivées**
   - Nettoyage final avec `AttributeManager`
 
-📸 *Capture suggérée : enchaînement des FeatureJoiners avec aperçu des sorties.*
+📸 *Capture du processus
+  ![Processu](photo/9.png)
+  ![Processu](photo/10.png)
+  ![Processu](photo/11.png)
+  ![Processu](photo/12.png)
+  ![Processu](photo/14.png)
+  ![Processu](photo/15.png)
+  ![Processu](photo/16.png)
+
 
 ---
 
@@ -62,7 +77,10 @@
   - Dossier : `Geo7630h25`
   - Activer **CREATE IF NEEDED** pour permettre les mises à jour
 
-📸 *Capture suggérée : Writer configuré avec service AGOL visible dans FME.*
+📸 *Capture du processus
+  ![Processu](photo/17.png)
+  ![Processu](photo/18.png)
+  ![Processu](photo/19.png)
 
 ---
 
@@ -74,7 +92,12 @@
 - Ajouter des étiquettes : afficher A comme pourcentage de A et B
 - Enregistrer la carte
 
-📸 *Capture suggérée : Map Viewer avec les données stylisées.*
+📸 *Capture : Map Viewer avec les données stylisées.*
+  ![Processu](photo/20.png)
+  ![Processu](photo/21.png)
+  ![Processu](photo/22.png)
+  ![Processu](photo/23.png)
+  ![Processu](photo/24.png)
 
 ---
 
@@ -87,6 +110,14 @@
 - Ajouter un **entête** (titre : "Stations de Bixi à Montréal")
 
 📸 *Capture suggérée : vue d’ensemble du dashboard avec la carte intégrée.*
+  ![Processu](photo/25.png)
+  ![Processu](photo/26.png)
+  ![Processu](photo/28.png)
+  ![Processu](photo/28.png)
+  ![Processu](photo/29.png)
+![Processu](photo/30.png)
+
+---
 
 ### ⚙️ Ajout d’éléments
 - **Jauge 1** : Total des départs (`start_total_count`)
@@ -104,6 +135,14 @@ return {
 - Activer la **référence** dans l’onglet Données de l’indicateur
 
 📸 *Capture suggérée : configuration de l’indicateur dans ArcGIS Dashboard avec le script.*
+  ![Processu](photo/30.png)
+  ![Processu](photo/31.png)
+  ![Processu](photo/32.png)
+  ![Processu](photo/33.png)
+  ![Processu](photo/34.png)
+  ![Processu](photo/35.png)
+  ![Processu](photo/36.png)
+  ![Processu](photo/37.png)
 
 ### 🔢 Widget de total des stations visibles
 - Ajouter un nouvel **indicateur** pour compter le nombre de stations affichées à l’écran
@@ -113,7 +152,8 @@ return {
 - Personnaliser le **thème** dans les réglages
 
 📸 *Capture suggérée : aperçu de l’interface finale du Dashboard.*
-
+  ![Processu](photo/38.png)
+  ![Processu](photo/39.png)
 ---
 
 ## 🧠 Actions interactives
@@ -122,6 +162,9 @@ return {
 
 📸 *Capture suggérée : configuration des filtres dynamiques de la carte.*
 
+  ![Processu](photo/40.png)
+  ![Processu](photo/41.png)
+ 
 ---
 
 ## 🖼️ Rendu final attendu
@@ -135,3 +178,4 @@ return {
 > Ce tableau de bord permet de visualiser la fréquentation des stations Bixi à Montréal, avec une lecture claire des départs, arrivées et écarts potentiels.
 
 📸 *Capture suggérée : capture plein écran du tableau de bord final complet.*
+ ![Processu](photo/42.png)
