@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Disparités Socio-Économiques - Équipe 1</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://unpkg.com/maplibre-gl@^5.3.0/dist/maplibre-gl.css" rel="stylesheet">
+  <link rel="stylesheet" href="app.css">
+  <script src="https://unpkg.com/split.js/dist/split.min.js"></script>
+</head>
+<body>
+
+  <div id="mainContainer">
+    <div id="map" class="split"></div>
+  <div id="infoPanel" class="split">
+      <div class="panel-header">
+        <h5>(Canada Census 2021)</h5>
+        <h3>Canada Census 2021</h3>
+        <p>Single Detached and Duplex</p>
+      </div>
+      <canvas id="histogram" height="100"></canvas>
+      <div class="panel-body">
+        <h5>by CensusMapper</h5>
+        <p><em>Based on Canada Census 2021</em></p>
+        <p>This map shows the percentage of occupied dwelling units that are "Single Detached" or "Duplex" units.</p>
+        <p><strong>Date :</strong> 2025-01-30</p>
+      </div>
+    </div>
+  </div>
+
+
+  <div id="legendChoropleth">
+    <div class="legend-item" style="background-color:#1f3a93">0.0%</div>
+    <div class="legend-item" style="background-color:#4169e1">10.0%</div>
+    <div class="legend-item" style="background-color:#87ceeb">20.0%</div>
+    <div class="legend-item" style="background-color:#d4f1f9">30.0%</div>
+    <div class="legend-item" style="background-color:#ffffcc">40.0%</div>
+    <div class="legend-item" style="background-color:#f4a261">60.0%</div>
+    <div class="legend-item" style="background-color:#e76f51">80.0%</div>
+    <div class="legend-item" style="background-color:#b22222">90.0%</div>
+  </div>
+  
+
+
+
+
+  
+
+
+  <script src="https://unpkg.com/maplibre-gl@^5.3.0/dist/maplibre-gl.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="app.js"></script>
+
+</body>
+</html>
