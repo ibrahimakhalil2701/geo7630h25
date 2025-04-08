@@ -1,79 +1,110 @@
-html, body {
-    margin: 0;
-    padding: 0;
-    height: 100%;
-    font-family: Arial, sans-serif;
-  }
-  
-  #mainContainer {
-    display: flex;
-    height: 100vh;
-    overflow: hidden;
-  }
-  
-  #map {
-    flex: 1;
-  }
-  
-  #splitter {
+/* ============================================
+   Styles de base pour toute la page
+   ============================================ */
+   html, body {
+    margin: 0;                     /* Supprime les marges par défaut */
+    padding: 0;                    /* Supprime les espacements internes */
+    height: 100%;                 /* Prend toute la hauteur de la fenêtre */
+    font-family: Arial, sans-serif; /* Police simple et lisible */
+}
+
+/* ============================================
+   Conteneur principal contenant la carte + panneau
+   ============================================ */
+#mainContainer {
+    display: flex;                /* Affichage en flexbox (ligne) */
+    height: 100vh;                /* Hauteur plein écran */
+    overflow: hidden;            /* Cache tout débordement (scroll) */
+}
+
+/* ============================================
+   Zone de la carte (occupera 100% de l'espace restant)
+   ============================================ */
+#map {
+    flex: 1;                      /* Prend tout l’espace non utilisé à gauche */
+}
+
+/* ============================================
+   (Obsolète ici, remplacé par Split.js)
+   Séparateur entre carte et panneau
+   ============================================ */
+#splitter {
     width: 5px;
     background-color: #ccc;
-    cursor: ew-resize;
-  }
-  
-  #infoPanel {
-    width: 400px;
-    background-color: #f9f9f9;
-    padding: 1rem;
-    overflow-y: auto;
-  }
-  
-  .panel-header {
-    border-bottom: 1px solid #ccc;
-    padding-bottom: 0.5rem;
-    margin-bottom: 1rem;
-  }
-  
-  .panel-body {
-    font-size: 0.95rem;
-  }
-  
-  canvas {
-    margin-bottom: 1rem;
-  }
-  
+    cursor: ew-resize;           /* Curseur pour redimensionner horizontalement */
+}
 
-  .split {
-    overflow: auto;
-  }
-  
-  .gutter {
-    background-color: #ccc;
-    cursor: col-resize;
-  }
-  
-  .gutter.gutter-horizontal {
-    width: 5px;
-  }
+/* ============================================
+   Panneau d'information à droite
+   ============================================ */
+#infoPanel {
+    width: 400px;                /* Largeur fixe initiale */
+    background-color: #f9f9f9;   /* Couleur de fond gris très clair */
+    padding: 1rem;               /* Espacement interne */
+    overflow-y: auto;            /* Scroll vertical si le contenu dépasse */
+}
 
-  
-  #legendChoropleth {
+/* ============================================
+   En-tête du panneau
+   ============================================ */
+.panel-header {
+    border-bottom: 1px solid #ccc;  /* Ligne de séparation */
+    padding-bottom: 0.5rem;         /* Espace sous le texte */
+    margin-bottom: 1rem;            /* Espace avant le contenu suivant */
+}
+
+/* ============================================
+   Corps du panneau d’information
+   ============================================ */
+.panel-body {
+    font-size: 0.95rem;             /* Taille de police légèrement réduite */
+}
+
+/* ============================================
+   Style de l’histogramme Chart.js
+   ============================================ */
+canvas {
+    margin-bottom: 1rem;            /* Espace entre le graphe et les paragraphes */
+}
+
+/* ============================================
+   Configuration utilisée par Split.js
+   ============================================ */
+.split {
+    overflow: auto;                 /* Scroll auto si nécessaire */
+}
+
+/* ============================================
+   Apparence du séparateur (Split.js)
+   ============================================ */
+.gutter {
+    background-color: #ccc;         /* Couleur du séparateur */
+    cursor: col-resize;             /* Curseur "déplacer" horizontalement */
+}
+
+/* Séparateur horizontal (entre colonnes) */
+.gutter.gutter-horizontal {
+    width: 5px;                     /* Épaisseur du séparateur */
+}
+
+/* ============================================
+   Légende choroplèthe en bas à gauche
+   ============================================ */
+#legendChoropleth {
     position: absolute;
-    bottom: 10px;
-    left: 10px;
-    display: flex;
-    background: rgba(255, 255, 255, 0.9);
-    border-radius: 5px;
-    overflow: hidden;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.3);
-  }
-  
-  .legend-item {
-    padding: 5px 8px;
-    font-size: 12px;
+    bottom: 10px;                   /* Décalé du bas */
+    left: 10px;                     /* Décalé de la gauche */
+    display: flex;                  /* Légende en ligne */
+    background: rgba(255, 255, 255, 0.9);  /* Fond blanc semi-transparent */
+    border-radius: 5px;             /* Coins arrondis */
+    overflow: hidden;              /* Cache tout débordement */
+    box-shadow: 0 1px 3px rgba(0,0,0,0.3); /* Légère ombre pour le relief */
+}
+
+/* Éléments individuels de la légende */
+.legend-item {
+    padding: 5px 8px;              /* Espacement autour du texte */
+    font-size: 12px;               /* Petite taille de police */
     text-align: center;
     color: black;
-  }
-
-  
-
+}

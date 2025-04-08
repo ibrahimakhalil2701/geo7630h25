@@ -4,51 +4,72 @@
   <meta charset="UTF-8">
   <title>Disparités Socio-Économiques - Équipe 1</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Feuille de style MapLibre -->
   <link href="https://unpkg.com/maplibre-gl@^5.3.0/dist/maplibre-gl.css" rel="stylesheet">
+
+  <!-- Feuille de style personnalisée -->
   <link rel="stylesheet" href="app.css">
+
+  <!-- Librairie pour créer un séparateur glissable entre deux sections -->
   <script src="https://unpkg.com/split.js/dist/split.min.js"></script>
 </head>
 <body>
 
+  <!-- Conteneur principal avec carte et panneau d'information côte à côte -->
   <div id="mainContainer">
+    
+    <!-- Carte interactive MapLibre -->
     <div id="map" class="split"></div>
-  <div id="infoPanel" class="split">
+
+    <!-- Panneau latéral contenant l'histogramme et les infos -->
+    <div id="infoPanel" class="split">
       <div class="panel-header">
-        <h5>(Canada Census 2021)</h5>
-        <h3>Canada Census 2021</h3>
-        <p>Single Detached and Duplex</p>
+        <h5>(Recensement du Canada 2021)</h5>
+        <h3>Recensement du Canada 2021</h3>
+        <p>Maisons individuelles et duplex</p>
       </div>
+
+      <!-- Groupe de boutons - Conditions économiques -->
+      <div id="economicButtons" class="button-group">
+        <button onclick="updateChoropleth('revenu_median_menage')">Revenu médian des ménages</button>
+        <button onclick="updateChoropleth('revenu_median_individu')">Revenu individuel médian</button>
+        <button onclick="updateChoropleth('chomage')">Taux de chômage</button>
+        <button onclick="updateChoropleth('densite_population')">Densité de population</button>
+      </div>
+
+      <!-- Histogramme dynamique -->
       <canvas id="histogram" height="100"></canvas>
+
+      <!-- Texte explicatif -->
       <div class="panel-body">
-        <h5>by CensusMapper</h5>
-        <p><em>Based on Canada Census 2021</em></p>
-        <p>This map shows the percentage of occupied dwelling units that are "Single Detached" or "Duplex" units.</p>
+        <h5>par CensusMapper</h5>
+        <p><em>Basé sur le Recensement du Canada 2021</em></p>
+        <p>Cette carte montre le pourcentage des logements occupés qui sont des maisons individuelles ou des duplex.</p>
         <p><strong>Date :</strong> 2025-01-30</p>
       </div>
     </div>
   </div>
 
-
+  <!-- Légende choroplèthe : palette de couleurs représentant les pourcentages -->
   <div id="legendChoropleth">
-    <div class="legend-item" style="background-color:#1f3a93">0.0%</div>
-    <div class="legend-item" style="background-color:#4169e1">10.0%</div>
-    <div class="legend-item" style="background-color:#87ceeb">20.0%</div>
-    <div class="legend-item" style="background-color:#d4f1f9">30.0%</div>
-    <div class="legend-item" style="background-color:#ffffcc">40.0%</div>
-    <div class="legend-item" style="background-color:#f4a261">60.0%</div>
-    <div class="legend-item" style="background-color:#e76f51">80.0%</div>
-    <div class="legend-item" style="background-color:#b22222">90.0%</div>
+    <div class="legend-item" style="background-color:#1f3a93">0,0%</div>
+    <div class="legend-item" style="background-color:#4169e1">10,0%</div>
+    <div class="legend-item" style="background-color:#87ceeb">20,0%</div>
+    <div class="legend-item" style="background-color:#d4f1f9">30,0%</div>
+    <div class="legend-item" style="background-color:#ffffcc">40,0%</div>
+    <div class="legend-item" style="background-color:#f4a261">60,0%</div>
+    <div class="legend-item" style="background-color:#e76f51">80,0%</div>
+    <div class="legend-item" style="background-color:#b22222">90,0%</div>
   </div>
-  
 
-
-
-
-  
-
-
+  <!-- Librairie MapLibre GL JS pour la carte -->
   <script src="https://unpkg.com/maplibre-gl@^5.3.0/dist/maplibre-gl.js"></script>
+
+  <!-- Librairie Chart.js pour le graphique -->
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+  <!-- Script principal contenant l'initialisation de la carte, du graphique, etc. -->
   <script src="app.js"></script>
 
 </body>
