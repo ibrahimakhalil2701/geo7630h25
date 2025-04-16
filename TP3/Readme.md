@@ -73,11 +73,8 @@ Ce projet, réalisé dans le cadre du TP3 du cours **GEO7630** à l'UQAM, propos
 1. **Cloner le dépôt ou télécharger le projet**
 
 2. **Servir localement** avec Live Server ou Python :
-```bash
-python -m http.server 8000
-```
 
-3. **Ouvrir dans un navigateur** :  [http://localhost:8000](http://localhost:8000)
+3. **Ouvrir dans un navigateur** 
 
 4. **Utilisation** :
    - Choisir une variable depuis le menu
@@ -88,14 +85,48 @@ python -m http.server 8000
 
 ## 🎨 Démonstration visuelle
 
+
+
+
+
+
 ### Interface principale
-![Interface](./captures/interface.png)
+![alt text](image.png)
+
+
+
+### La section de la présentation des données ainsi que la méthodologie
+![alt text](image-7.png)
+![alt text](image-8.png)
+
+
+### activation de la couche des arrondissement 
+![alt text](image-1.png)
+
+
 
 ### Menu déroulant (variables)
-![Menu](./captures/menu.png)
+![alt text](image-2.png)
+
+
+
+### La section de l'histogramme vide quand aucune variable n'est sélectionnée
+![alt text](image-3.png)
+
+
+
+### Sélection d'une variable pour afficher la carte 
+![alt text](image-4.png)
+
+
 
 ### Interaction avec histogramme
-![Histogramme](./captures/histogramme.png)
+![alt text](image-5.png)
+![alt text](image-6.png)
+
+
+
+
 
 > Remplacez les images ci-dessus par vos propres captures d'écran.
 
