@@ -22,7 +22,7 @@ Ce projet, réalisé dans le cadre d'un TP3 de GEO7630, présente une applicatio
 
 ## Structure du projet
 
-```plaintext
+
 /Equipe1
 ├── index.html           # Fichier HTML principal de l'application
 ├── app.css              # Feuille de style personnalisée
@@ -230,29 +230,7 @@ Conclusion
 Ce projet illustre la création d'une application web interactive qui permet d'analyser les disparités socio-économiques à Montréal grâce à une visualisation efficace des données du Recensement du Canada 2021.
 L'architecture modulaire et l'intégration de plusieurs bibliothèques spécialisées offrent une interface intuitive et réactive, en adéquation avec les objectifs pédagogiques du TP.
 
-N'oubliez pas de mettre à jour les captures d'écran et d'adapter le contenu selon vos besoins spécifiques.
-
-yaml
-Copier
-
----
-
-Ce README.md est prêt à être utilisé sur GitHub pour documenter ton projet. Tu peux l'adapter ou le compléter en fonction de tes besoins !
-
-1/2
 
 
 
 
-
-
-
-
-
-
-Rechercher
-
-Recherche approfondie
-
-
-Chat
