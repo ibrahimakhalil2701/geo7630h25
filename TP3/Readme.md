@@ -23,7 +23,6 @@ Ce projet, réalisé dans le cadre du TP3 du cours **GEO7630** à l'UQAM, propos
 - **Analyse statistique** : Générer un histogramme dynamique avec Chart.js.
 - **Exploration thématique** : Permettre à l'utilisateur de choisir parmi plusieurs variables via un menu déroulant.
 - **Interaction utilisateur** : Mettre en surbrillance les zones selon les classes de valeurs.
-- **Modularité** : Organiser le code en modules JavaScript pour en faciliter la lecture et la maintenance.
 
 ---
 
@@ -51,14 +50,7 @@ Ce projet, réalisé dans le cadre du TP3 du cours **GEO7630** à l'UQAM, propos
 /Equipe1
 ├── index.html             # Structure HTML de la page
 ├── app.css                # Feuille de style principale
-├── app.js                 # Point d'entrée (importe tous les modules)
-├── js/
-│   ├── map-init.js        # Initialisation de la carte MapLibre
-│   ├── chart-init.js      # Création de l'histogramme Chart.js
-│   ├── data-loader.js     # Chargement des données GeoJSON et MVT
-│   ├── choropleth.js      # Mise à jour de la couche choroplèthe + légende
-│   ├── dropdown.js        # Génération du menu de variables
-│   └── variables.js       # Variables globales (palettes, labels, etc.)
+├── app.js                 # le code de js
 ```
 
 ---
@@ -72,7 +64,7 @@ Ce projet, réalisé dans le cadre du TP3 du cours **GEO7630** à l'UQAM, propos
 ### Lancement
 1. **Cloner le dépôt ou télécharger le projet**
 
-2. **Servir localement** avec Live Server ou Python :
+2. **Servir localement** :
 
 3. **Ouvrir dans un navigateur** 
 
@@ -128,7 +120,7 @@ Ce projet, réalisé dans le cadre du TP3 du cours **GEO7630** à l'UQAM, propos
 
 
 
-> Remplacez les images ci-dessus par vos propres captures d'écran.
+
 
 ---
 
@@ -136,7 +128,7 @@ Ce projet, réalisé dans le cadre du TP3 du cours **GEO7630** à l'UQAM, propos
 
 ### Exemple : Initialisation de la carte
 ```js
-export function initMap() {
+
   map = new maplibregl.Map({
     container: 'map',
     style: 'https://api.maptiler.com/maps/dataviz/style.json?key=YOUR_KEY',
@@ -145,7 +137,6 @@ export function initMap() {
     hash: true
   });
   map.addControl(new maplibregl.NavigationControl(), 'top-left');
-}
 ```
 
 ### Exemple : Mise à jour de la couche choroplèthe
